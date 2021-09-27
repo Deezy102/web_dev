@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../lab1/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header1">
+        <div class="container">
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="http://lab1.std-1678.ist.mospolytech.ru">Главная</a>   
+                    </li>                    
+                </ul>
+            </nav>
+        </div>   
+    </header>
+    <main> 
+
+        
+        <div class="authform">
+            <form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data" id="auth">
+
+                <input type="hidden" name="user_id" value="7">
+                <h1>Авторизация</h1>
+                <div class="form-auth">
+                    <p><label for="fio">Login</label></p>
+                    <input type="text" id="login" name="login" placeholder="login">
+                </div>
+                
+                <div class="form-auth">
+                    <p><label for="password">Password</label></p>
+                    <input required type="password" name="password" id="password">
+                </div>    
+    
+                <div class="form-auth">
+                    <label for="save">Запомнить меня</label>
+                    <input type="checkbox" name="save" id="save" value="yes">
+                </div>
+    
+                <div class="form-auth">
+                    <input type="submit" value="Sign In">
+                </div>
+                
+            </form>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2021 MosPolyKek
+        </div>
+    </footer>
+</body>
+
+</html>

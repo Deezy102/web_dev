@@ -1,4 +1,92 @@
 .form-group {
     margin-bottom: 15px;
     position: relative;
+    margin-left: 40%;
+    margin-right: 30%;
+    text-align: left;
+    
+    
+}
+.authform {
+    background-color: hotpink;
+    border: black solid 3px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+.form-auth {
+    position: relative;
+    text-align: left;
+    margin-left: 20%;
+}
+.form-auth p{
+    margin: 0;
+}
+.header1{
+    background-color: hotpink;
+    color: blanchedalmond;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-indent: initial;
+    background: no-repeat url(background.jfif);
+    background-size: cover;
+    margin: 0;
+    font-size: 20px;
+}
+.container{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+main {
+    text-align: center;
+
+}
+
+.main-menu ul{
+    padding: 0;
+    margin: 0;
+}
+.main-menu li{
+    display: inline;
+    margin-right: 10px;
+}
+.main-menu a{
+    text-decoration: none;
+
+}
+.lists li {
+    margin: 10px 0;
+    position: relative;
+}
+
+.footer{
+    background-color: black;
+    color: blanchedalmond;
+    padding: 0;
+    margin: 1em 0 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+form {
+    display: block;
+}
+#form {
+    margin: 0 auto;
+    width: 75%;
 }

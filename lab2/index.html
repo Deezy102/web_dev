@@ -14,10 +14,10 @@
             <nav class="main-menu">
                 <ul>
                     <li>
-                        <a href="http://www.lab1.std-1678.ist.mospolytech.ru">Главная</a>   
+                        <a href="http://lab1.std-1678.ist.mospolytech.ru">Главная</a>   
                     </li>
                     <li>
-                        <a href="">Войти на форум</a>
+                        <a href="auth.html">Войти на форум</a>
                     </li>
                     
                 </ul>
@@ -28,11 +28,9 @@
 
         
 
-        <form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data">
+        <form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data" id="form">
 
             <input type="hidden" name="user_id" value="7">
-            
-           <div class="container">
             <h1>Форма обратной связи</h1>
             <div class="form-group">
                 <label for="fio">ФИО</label>
@@ -41,7 +39,7 @@
             
             <div class="form-group">
                 <label for="email">Email</label>
-                <input required type="email" name="email" id="email" placeholder="example@box.com">
+                <input required type="email" name="email" id="email" placeholder="example@post.com">
             </div>    
             
             <div class="form-group">
@@ -51,6 +49,9 @@
 
                 <input type="radio" name="source" id="friends" value="friends">
                 <label for="friends">Друзья</label>
+                
+                <input type="radio" name="source" id="fandom" value="fandom">
+                <label for="friends">Другой фандом</label>
 
 
             </div>
@@ -61,30 +62,32 @@
             </div>
 
             <div class="form-group">
-                <label for="category">Категория</label>
+                <label for="category">Тип обращения</label>
                 <select name="category" id="category"> 
                     <option value="proposal">Предложение</option>
                     <option value="feedback">Отзыв</option>
                 </select>
             </div>
-
-            <div class="form-group">
-                <label for="agreement">Согласен на обработку данных</label>
-                <input type="checkbox" name="agreement" id="agreement" value="yes">
-            </div>
-            
             <div class="form-group">
                 <label for="attach">Выберите файл</label>
                 <input type="file" name="attach" id="attach">
+            </div>
+            <div class="form-group">
+                <label for="agreement">Согласен на обработку данных</label>
+                <input type="checkbox" name="agreement" id="agreement" value="yes">
             </div>
 
             <div class="form-group">
                 <input type="submit" value="Отправить">
             </div>
-           </div>
             
-
         </form>
     </main>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2021 MosPolyKek
+        </div>
+    </footer>
 </body>
+
 </html>
