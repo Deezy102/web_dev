@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../lab1/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header1">
+        <div class="container">
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="www.lab1.std-1678.ist.mospolytech.ru">Главная</a>   
+                    </li>
+                    <li>
+                        <a href="">Войти на форум</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>   
+    </header>
+    <main> 
+
+        
+
+        <form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data">
+
+            <input type="hidden" name="user_id" value="7">
+            
+           <div class="container">
+            <h1>Форма обратной связи</h1>
+            <div class="form-group">
+                <label for="fio">ФИО</label>
+                <input type="text" id="fio" name="fio" placeholder="Ivanov A. A.">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input required type="email" name="email" id="email" placeholder="example@box.com">
+            </div>    
+            
+            <div class="form-group">
+                <p>Как вы о нас узнали?</p>
+                <input type="radio" name="source" id="advertaising" value="advertaising" checked>
+                <label for="advertaising">Реклама</label>
+
+                <input type="radio" name="source" id="friends" value="friends">
+                <label for="friends">Друзья</label>
+
+
+            </div>
+
+            <div class="form-group">
+                <!-- <label for="msg">Введите сообщение</label> -->
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Категория</label>
+                <select name="category" id="category"> 
+                    <option value="proposal">Предложение</option>
+                    <option value="feedback">Отзыв</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="agreement">Согласен на обработку данных</label>
+                <input type="checkbox" name="agreement" id="agreement" value="yes">
+            </div>
+            
+            <div class="form-group">
+                <label for="attach">Выберите файл</label>
+                <input type="file" name="attach" id="attach">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Отправить">
+            </div>
+           </div>
+            
+
+        </form>
+    </main>
+</body>
+</html>
