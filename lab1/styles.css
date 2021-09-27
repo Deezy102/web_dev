@@ -45,7 +45,7 @@ main p{
 .avatar{
     height: 300px;
     text-align: center;
-    background-image: url(images/background.jfif);
+    background-image: url(../images/background.jfif);
     background-repeat: no-repeat;
     background-position: center;
 
