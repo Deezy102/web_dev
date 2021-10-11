@@ -23,19 +23,24 @@
     </header>
     <main>
         <div class="container flex-wrapper">
-            
             <aside class="sidebar">
                 <form>
                     <section class="sidebar-section">
-                        <header class="sidebar-header">Страна</header>
-                        <div class="form-group"><input type="radio" name="country" id="country1"><a href="#Italy">Италия</a><label for="country1"></label></div>
-                        <div class="form-group"><input type="radio" name="country" id="country2"><a href="#Spain">Испания</a><label for="country2"></label></div>
-                        <div class="form-group"><input type="radio" name="country" id="country3"><a href="#France">Франция</a><label for="country3"></label></div>
-                        <div class="form-group"><input type="radio" name="country" id="country4"><a href="#Russia">Россия</a><label for="country4"></label></div>
-                        <!-- <div class="form-group"><input type="radio" name="country" id="country5"><a href=""></a><label for="country5"></label></div> -->
+                        <header class="sidebar-header">Страна</header>                        
+                        <div class="menu">
+                            <div class="menu__item">
+                                <a href="#Italy">Италия</a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#Spain">Испания</a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#France">Франция</a>
+                            </div>
+                        </div> 
                     </section>
                     <div class="form-group">
-                        <label for="category">Сортировать по:</label>
+                        <label for="category" class="sidebar-header">Сортировать по:</label>
                         <select name="category" id="category"> 
                             <option value="popular">Популярности</option>
                             <option value="upprice">Цене по возрастанию</option>
@@ -66,7 +71,7 @@
                             </div>
                             <div class="control">
                                 <button class="btn">    
-                                    <span class="price">1000 &#8381;</span>
+                                    <span class="price">659.99 &#8381;</span>
                                     <span class="buy">В корзину</span>
                                 </button>
                             </div>
@@ -74,14 +79,40 @@
                     </div>
                     <div class="product-card">
                         <div class="product-img">
-                            <img src="///" alt="">
+                            <img src="https://amwine.ru/upload/iblock/bed/bed16570036f58e1186a35b03576732f.png" alt="">
                         </div>
                         <div class="product-details">
-                            <header>Такой себе чай</header>
-                            <p class="information">KFJKFJ HSKDFHJFLKSJ DHFKSJDHFKSDJFH KSFJSLDFHKSDfj</p>
+                            <header>Вино Montease Chardonnay Feudo Croce</header>
+                            <div class="information">
+                                <p class="par">Производитель: Casa Vitivinicola Tinazzi</p>
+                                <p class="par">Страна: Италия</p>
+                                <p class="par">Регион производителя: Апулия</p>
+                                <p class="par"> Сухое белое</p>
+                            </div>
                             <div class="control">
                                 <button class="btn">
-                                    <span class="price">1000 &#8381;</span>
+                                    <span class="price">689.99 &#8381;</span>
+                                    <span class="buy">В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://amwine.ru/upload/iblock/315/3155254765f46b337ab843a9716cbdf2.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <header>Вино Botter, La Casada Chardonnay, Veneto</header>
+                            <div class="information">
+                                <p class="par">Производитель: Botter</p>
+                                <p class="par">Страна: Италия</p>
+                                <p class="par">Регион производителя: Венето</p>
+                                <p class="par">
+                                    Сухое                белое            </p>
+                            </div>
+                            <div class="control">
+                                <button class="btn">
+                                    <span class="price">709 &#8381;</span>
                                     <span class="buy">В корзину</span>
 
                                 </button>
@@ -90,30 +121,19 @@
                     </div>
                     <div class="product-card">
                         <div class="product-img">
-                            <img src="///" alt="">
+                            <img src="https://amwine.ru/upload/iblock/941/941a259a6eb919990f59915177565435.png" alt="">
                         </div>
                         <div class="product-details">
-                            <header>Чай для нытиков</header>
-                            <p class="information">KFJKFJHS KDFHJFLKSJDH  FKSJDHFKSDJ FHKSFJSLD FHKSDfj</p>
-                            <div class="control">
-                                <button class="btn">
-                                    <span class="price">1000 &#8381;</span>
-                                    <span class="buy">В корзину</span>
-
-                                </button>
+                            <header>Вино Montecelli Vine D`Italia Soave Garganega DOC</header>
+                            <div class="information">
+                                <p class="par">Производитель: Botter</p>
+                                <p class="par">Страна: Италия</p>
+                                <p class="par">Регион производителя: Соаве</p>
+                                <p class="par">Сухое белое</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="///" alt="">
-                        </div>
-                        <div class="product-details">
-                            <header>Делишес чай</header>
-                            <p class="information">KFJKFJHSKDFHJFL KSJDHFKSJDHFKSDJ FHKSFJSLD FHKSDfj</p>
                             <div class="control">
                                 <button class="btn">
-                                    <span class="price">1000 &#8381;</span>
+                                    <span class="price">749 &#8381;</span>
                                     <span class="buy">В корзину</span>
 
                                 </button>
@@ -121,14 +141,150 @@
                         </div>
                     </div>
                 </div> 
+                <h1 id="Spain" class="products-category-header">Белые вина из Испании</h1>
+                <div class="products-list">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://amwine.ru/upload/iblock/407/40703a4758d3f30d0559e2d8f7108128.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <header>Вино Pla de Bages Abadal Picapoll White Dry
+                            </header>
+                            <div class="information">
+                                <p class="par">Производитель: Roqueta</p>
+                                <p class="par">Страна: Испания</p>
+                                <p class="par">Регион производителя: Пла Де Бажес</p>
+                                <p class="par">
+                                    Сухое                белое            </p>
+                            </div>
+                            <div class="control">
+                                <button class="btn">    
+                                    <span class="price">1209.99 &#8381;</span>
+                                    <span class="buy">В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://amwine.ru/upload/iblock/822/8222ee86f232553bb9654dbc60ff1c4e.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <header>Вино Cuatro Rayas, Organic Verdejo Rueda</header>
+                            <div class="information">
+                                <p class="par">Производитель: Cuatro Rayas</p>
+                                <p class="par">Страна: Испания</p>
+                                <p class="par">Регион производителя: Кастилия и Леон, Руэда</p>
+                                <p class="par"> 
+                                    Сухое                белое            </p>
+                            </div>
+                            <div class="control">
+                                <button class="btn">
+                                    <span class="price">1179.99 &#8381;</span>
+                                    <span class="buy">В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://amwine.ru/upload/iblock/320/3205568103203833038c93b46bd8b107.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <header>Вино Emporda Perelada Nomes Garnatxa Blanca</header>
+                            <div class="information">
+                                <p class="par">Производитель: Castillo Perelada</p>
+                                <p class="par">Страна: Испания</p>
+                                <p class="par">Регион производителя: Каталония</p>
+                                <p class="par">
+                                    Сухое                белое            </p>
+                            </div>
+                            <div class="control">
+                                <button class="btn">
+                                    <span class="price">1049 &#8381;</span>
+                                    <span class="buy">В корзину</span>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 id="France" class="products-category-header">Белые вина из Франции</h1>
+                <div class="products-list">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://amwine.ru/upload/resize_cache/iblock/662/620_620_1/662ae13f60e3b51c002bdb33718ce051.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <header>Вино Chateau de l’aumerade Cotes De Provence
+                            </header>
+                            <div class="information">
+                                <p class="par">Производитель: Chateau de l'Aumerade</p>
+                                <p class="par">Страна: Франция</p>
+                                <p class="par">Регион производителя: Прованс</p>
+                                <p class="par">
+                                    Сухое                белое            </p>
+                            </div>
+                            <div class="control">
+                                <button class="btn">    
+                                    <span class="price">1399.99 &#8381;</span>
+                                    <span class="buy">В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://amwine.ru/upload/iblock/06a/06a0eeb18ba69686ec45232337bb855e.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <header>Вино Lucien Albrecht Riesling Reserve White Semi-Dry</header>
+                            <div class="information">
+                                <p class="par">Производитель: Lucien Albrecht</p>
+                                <p class="par">Страна: Франция</p>
+                                <p class="par">Регион производителя: Эльзас</p>
+                                <p class="par">
+                                    Полусухое                белое            </p>
+                            </div>
+                            <div class="control">
+                                <button class="btn">
+                                    <span class="price">1269.99 &#8381;</span>
+                                    <span class="buy">В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://amwine.ru/upload/iblock/642/642bf03005170fc885218d77b8a712b9.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <header>Вино Albert Bichot Bourgogne Aligote White Dry</header>
+                            <div class="information">
+                                <p class="par">Производитель: Albert Bichot</p>
+                                <p class="par">Страна: Франция</p>
+                                <p class="par">Регион производителя: Бургундия</p>
+                                <p class="par">
+                                    Сухое                белое            </p>
+                            </div>
+                            <div class="control">
+                                <button class="btn">
+                                    <span class="price">1129 &#8381;</span>
+                                    <span class="buy">В корзину</span>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-                       
+                  
 
         </div>
     </main>
     <footer class="footer">
         <div class="container">
-            &copy; 2021 ООО "Товары для меда"
+            &copy; 2021 ООО "Винный Погребок Влада"
         </div>
     </footer>
 </body>
