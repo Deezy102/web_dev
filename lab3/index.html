@@ -27,33 +27,47 @@
             <aside class="sidebar">
                 <form>
                     <section class="sidebar-section">
-                        <header class="sidebar-header">Товары</header>
-                        <div class="form-group"><input type="radio" name="country" id="country1"><a href="">Италия</a><label for="country1"></label></div>
-                        <div class="form-group"><input type="radio" name="country" id="country2"><a href="">Испания</a><label for="country2"></label></div>
-                        <div class="form-group"><input type="radio" name="country" id="country3"><a href="">Франция</a><label for="country3"></label></div>
-                        <div class="form-group"><input type="radio" name="country" id="country4"><a href="">Россия</a><label for="country4"></label></div>
+                        <header class="sidebar-header">Страна</header>
+                        <div class="form-group"><input type="radio" name="country" id="country1"><a href="#Italy">Италия</a><label for="country1"></label></div>
+                        <div class="form-group"><input type="radio" name="country" id="country2"><a href="#Spain">Испания</a><label for="country2"></label></div>
+                        <div class="form-group"><input type="radio" name="country" id="country3"><a href="#France">Франция</a><label for="country3"></label></div>
+                        <div class="form-group"><input type="radio" name="country" id="country4"><a href="#Russia">Россия</a><label for="country4"></label></div>
                         <!-- <div class="form-group"><input type="radio" name="country" id="country5"><a href=""></a><label for="country5"></label></div> -->
                     </section>
+                    <div class="form-group">
+                        <label for="category">Сортировать по:</label>
+                        <select name="category" id="category"> 
+                            <option value="popular">Популярности</option>
+                            <option value="upprice">Цене по возрастанию</option>
+                            <option value="downprice">Цене по убыванию</option>
+                            <option value="rating">Рейтингу</option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <input class="apply-btn" type="submit" value="Применить">
                     </div>
                 </form>
             </aside>
             <div class="page-content">
-                <h1 class="products-category-header">Товары для мёда</h1>
+                <h1 id="Italy" class="products-category-header">Белые вина из Италии</h1>
                 <div class="products-list">
                     <div class="product-card">
                         <div class="product-img">
-                            <img src="///" alt="">
+                            <img src="https://amwine.ru/upload/resize_cache/iblock/bc8/620_620_1/bc85dbf41d2e2935ce93428e36148db8.png" alt="">
                         </div>
                         <div class="product-details">
-                            <header>синдзи пьет чаёк</header>
-                            <p class="information"></p>
+                            <header>Вино San Martino Prosecco Millesimato Via Vai
+                            </header>
+                            <div class="information">
+                                <p class="par">Производитель: San Martino Vini</p>
+                                <p class="par">Страна: Италия</p>
+                                <p class="par">Регион производителя: Фриули-Венеция-Джулия</p>
+                                <p class="par">Брют белое</p>
+                            </div>
                             <div class="control">
                                 <button class="btn">    
-                                    
-                                    <span class="buy">Заказать</span>
-
+                                    <span class="price">1000 &#8381;</span>
+                                    <span class="buy">В корзину</span>
                                 </button>
                             </div>
                         </div>
@@ -68,7 +82,7 @@
                             <div class="control">
                                 <button class="btn">
                                     <span class="price">1000 &#8381;</span>
-                                    <span class="buy">Заказать</span>
+                                    <span class="buy">В корзину</span>
 
                                 </button>
                             </div>
@@ -84,7 +98,7 @@
                             <div class="control">
                                 <button class="btn">
                                     <span class="price">1000 &#8381;</span>
-                                    <span class="buy">Заказать</span>
+                                    <span class="buy">В корзину</span>
 
                                 </button>
                             </div>
@@ -100,7 +114,7 @@
                             <div class="control">
                                 <button class="btn">
                                     <span class="price">1000 &#8381;</span>
-                                    <span class="buy">Заказать</span>
+                                    <span class="buy">В корзину</span>
 
                                 </button>
                             </div>

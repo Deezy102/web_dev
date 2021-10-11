@@ -112,8 +112,7 @@ body{
 .product-details{
     flex-basis: 50%;
     width: 50%;
-    height: 50%;
-    margin: 0;
+    height: 100%;
     
 }
 .product-details header{
@@ -125,16 +124,7 @@ body{
     height: 65%;
     overflow: hidden;
     font-size: 0.9rem;
-    margin: 0;
 }
-
-.product-details .information par{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin: 0;
-    text-decoration: blue;
-}
-
 .control{
     text-align: center;
 }
