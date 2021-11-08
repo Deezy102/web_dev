@@ -1,0 +1,69 @@
+html, body, main{
+    height: 100%;
+    background-color: #171717
+    
+}
+
+main{
+    display: flex;
+}
+
+.calc-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    background-color: #363535
+}
+
+.screen{
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 120px;
+    border: 2px #d8980f solid; 
+    color: #c0c0c0;
+    font-size: 35px;
+}
+
+.buttons{
+    display: flex;
+    align-items: stretch;
+    background-color: #363535;
+    border: 2px #d8980f solid;
+}
+
+.digits{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-right: 2px #d8980f solid;
+}
+
+.other{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.buttons button{
+    height: 90px;
+    width: 90px;
+    color: lightgrey;
+    background-color: #363535;
+    border: #363535;
+    cursor: pointer;
+}
+
+.other button {
+    color: #d8980f;
+}
+
+.calc-container span, button{
+    font-size: 50px;
+
+}
+
+.digits button:last-child{
+    visibility: hidden;
+}
