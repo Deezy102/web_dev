@@ -1,0 +1,19 @@
+.navbar-brand {
+    font-size: 120%;
+}
+.banner {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+.contacts {
+    background-color: #198754;
+}
+.about {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.footer {
+    background-color: #198754;
+
+}
